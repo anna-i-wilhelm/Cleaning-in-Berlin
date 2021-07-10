@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cleanies</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .final-project {
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #11a40c 0%, #fdbb2d 100%);
+        border-radius: 10px;
+        color: #fff;
+        width: 50%;
+        padding: 30px;
+        margin: 30px auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      h5 {
+        font-size: 14px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px 20px;
+      }
+      h5:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      .IPCC {
+        color: white;
+        text-decoration: none;
+      }
+
+      .IPCC:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: white;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      }
+
+      p {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        line-height: 2;
+        font-size: 12;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      hr {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        margin: 0px 0px 20px 0px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.9);
+        color: green;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      footer {
+        font-size: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="final-project">
+      <h1>🍃 THE CLEANIES 🍃</h1>
+      <hr />
+      <h2><em>Cleaning up Berlin since 2021</em></h2>
+      <hr />
+      <img
+        src="https://www.bsr.de/assets/images/reinigung_kehrpaket_2784x1856_3x2_rdax_1500x1000_85s.JPG"
+        alt="On the picture are gloves, garbage bags, wests and pliers for cleaning up plastic and other garbage in cities."
+        width="300"
+      />
+      <br />
+      <h3>About us</h3>
+      <p>
+        We are two good friends who finally wanted to move something! We care a
+        lot about the
+        <strong>environment and climate change</strong>, steadily trying to make
+        our CO2-footprint as small as possible. In the face of climate change we
+        knew, we had to do something.
+      </p>
+
+      <a href="https://www.ipcc.ch/" target="_blank" class="IPCC">
+        <h5>
+          More information on the climate emergency can be found on the website
+          of the "International Panel for Climate Change", IPCC.
+        </h5></a
+      >
+
+      <p>
+        When we collected garbage the first time in March 2021, we knew we
+        wanted continue. The feeling of satisfaction was amazing! Since then we
+        meet every second week - sometimes we grab friends and sometimes
+        afterwards we grab a beer. Usually we go and clean a small area of a
+        park in two hours - and have two full bags of garbage.
+      </p>
+      <h3>Where and when can I join?</h3>
+      <p>
+        We are located in Berlin, Germany. If you want to support us, you have
+        to live around the Brandenburg/Berlin area. But you can always collect
+        garbage yourself - take a friend or set up a local group and go! If you
+        want more info on how to get started, feel free to contact us.
+      </p>
+      <button class="newsletter-button">
+        Interested? 🍃 Let us know your email so we can stay in touch.
+      </button>
+      <footer>
+        This page was built by
+        <strong><em>Anna-Isabell Wilhelm</em></strong> using HTML, CSS and
+        JavaScript
+      </footer>
+    </div>
+  </body>
+  <script>
+    function newsletter() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email address?");
+      let emoji = prompt("What is your favorite emoji?");
+
+      alert(
+        "Thank you, " +
+          name +
+          "! You will receive a confirmation email. " +
+          emoji
+      );
+    }
+
+    let newsletterButton = document.querySelector(".newsletter-button");
+    newsletterButton.addEventListener("click", newsletter);
+  </script>
+</html>
